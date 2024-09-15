@@ -1,0 +1,6 @@
+post_install() {
+	echo "If you want to run this using a non-root account, run 'sudo setcap CAP_NET_RAW=+ep /usr/bin/reliquary-archiver'"
+}
+post_upgrade() {
+	echo "If you previously used this from a non-root account re-run 'sudo setcap CAP_NET_RAW=+ep /usr/bin/reliquary-archiver'"
+}
